@@ -1,0 +1,400 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 50px;
+  height: 50px; /* Sabit bir boyut */
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #333;
+}
+
+/* Menü */
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.menu-item img {
+  width: 40px; /* Menü ikon boyutu */
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.menu-item:hover {
+  color: #000;
+  font-size: 15px;
+}
+
+.menu-item img:hover {
+  transform: scale(1.15);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .btn-primary {
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px 22px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.auth-buttons .btn-primary:hover {
+  transform: scale(1.06);
+}
+
+.auth-buttons .btn-secondary {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.auth-buttons .btn-secondary:hover {
+ 
+  transform: scale(1.06);
+}
+.logo-container:hover {
+  transform: scale(1.02); /* Hem logo hem yazıyı büyüt */
+  transition: transform 0.3s ease; /* Yumuşak geçiş */
+  
+}
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* Üst Kısım */
+.header {
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.menu-item.active span {
+  font-weight: bold;
+  color: #4285F4;
+}
+
+.menu-item img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* Ana İçerik */
+.ai-container {
+  margin: 50px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.ai-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ai-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Üst Kısım */
+.header {
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+/* Ana İçerik */
+.main-container {
+  display: flex;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sidebar ul li:hover {
+  background: #ddd;
+}
+
+/* Chat Bölümü */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+  line-height: 1.5;
+}
+
+.message.bot {
+  background: #f0f0f0;
+  color: #333;
+  align-self: flex-start;
+}
+
+.message.user {
+  background: #4285F4;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Giriş Kutusu */
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+
+#send-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background: #3367D6;
+}
+
+
