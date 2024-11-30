@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kariyer Değişim - CV Oluştur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cv.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Üst Kısım -->
+    <div class="header">
+        <div class="logo-container">
+            <a href="anasayfa.html" class="logo-container">
+                <img src="fotograf/logo.png" alt="Logo" class="logo">
+                <h1 class="logo-text">Bir Kariyer Değişim</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="forumlar.html" class="menu-item">
+                <img src="fotograf/forum.png" alt="Forumlar">
+                <span>Forumlar</span>
+            </a>
+            <a href="mentorlar.html" class="menu-item">
+                <img src="fotograf/mentor.png" alt="Mentorlar">
+                <span>Mentorlar</span>
+            </a>
+            <a href="yzeka.html" class="menu-item">
+                <img src="fotograf/yzeka.png" alt="Yapay Zeka">
+                <span>Yapay Zeka</span>
+            </a>
+            <a href="makale.html" class="menu-item">
+                <img src="fotograf/makale.png" alt="Makaleler">
+                <span>Makaleler</span>
+            </a>
+            <a href="isilanlari.html" class="menu-item">
+                <img src="fotograf/iş.png" alt="İş İlanları">
+                <span>İş İlanları</span>
+            </a>
+            <a href="cv.html" class="menu-item">
+                <img src="fotograf/cv.png" alt="CV Oluştur">
+                <span>CV Oluştur</span>
+            </a>
+        </div>
+        <div class="auth-buttons">
+            <div class="auth-buttons">
+                <div class="button-with-icon">
+                    <a href="üyeol.html" class="btn-primary">Hemen Katıl</a>
+                </div>
+                <div class="button-with-icon">
+                    <a href="oturumac.html" class="btn-secondary">Oturum Aç</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Taslak Seçim Bölümü -->
+    <div class="cv-selection-container">
+        <h2>CV Taslağı Seç</h2>
+        <div class="cv-options">
+            <div class="cv-option" onclick="selectTemplate(1)">
+                <img src="fotograf/cv1.png" alt="CV Taslağı 1">
+                <p>Taslak 1</p>
+            </div>
+            <div class="cv-option" onclick="selectTemplate(2)">
+                <img src="fotograf/cv2.png" alt="CV Taslağı 2">
+                <p>Taslak 2</p>
+            </div>
+            <div class="cv-option" onclick="selectTemplate(3)">
+                <img src="fotograf/cv3.png" alt="CV Taslağı 3">
+                <p>Taslak 3</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Düzenleme Bölümü -->
+    <div id="cv-editor-container" style="display: none;">
+        <h2>Düzenleme Ekranı</h2>
+        <div id="cv-template" class="cv-template" contenteditable="true">
+            <!-- Taslak buraya yüklenecek -->
+        </div>
+        <button class="download-btn" onclick="downloadCV()">CV'yi İndir</button>
+    </div>
+
+    <script src="js/cv.js"></script>
+</body>
+</html>

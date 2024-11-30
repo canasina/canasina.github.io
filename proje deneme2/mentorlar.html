@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kariyer Değişim</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mentorlar.css">
+</head>
+<body>
+    <!-- Üst Kısım -->
+    <div class="header">
+        <div class="logo-container">
+            <a href="anasayfa.html" class="logo-container">
+                <img src="fotograf/logo.png" alt="Logo" class="logo">
+                <h1 class="logo-text">Bir Kariyer Değişim</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="forumlar.html" class="menu-item">
+                <img src="fotograf/forum.png" alt="Forumlar">
+                <span>Forumlar</span>
+            </a>
+            <a href="mentorlar.html" class="menu-item">
+                <img src="fotograf/mentor.png" alt="Mentorlar">
+                <span>Mentorlar</span>
+            </a>
+            <a href="yzeka.html" class="menu-item">
+                <img src="fotograf/yzeka.png" alt="Yapay Zeka">
+                <span>Yapay Zeka</span>
+            </a>
+            <a href="makale.html" class="menu-item">
+                <img src="fotograf/makale.png" alt="Makaleler">
+                <span>Makaleler</span>
+            </a>
+            <a href="isilanlari.html" class="menu-item">
+                <img src="fotograf/iş.png" alt="İş İlanları">
+                <span>İş İlanları</span>
+            </a>
+            <a href="cv.html" class="menu-item">
+                <img src="fotograf/cv.png" alt="CV Oluştur">
+                <span>Cv Oluştur</span>
+              </a>
+        </div>
+        <div class="auth-buttons">
+            <!-- Hemen Katıl Butonu -->
+            <div class="button-with-icon">
+                <a href="üyeol.html" class="btn-primary" target="_blank">Hemen Katıl</a>
+            </div>
+            <!-- Oturum Aç Butonu -->
+            <div class="button-with-icon">
+                <a href="oturumac.html" class="btn-secondary" target="_blank">Oturum Aç</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mentorlar Ana İçerik -->
+    <div class="mentor-container">
+        <h2 class="mentor-title">Mentorlar</h2>
+        <p class="mentor-description">Deneyimli mentorlarımızla kariyer hedeflerinizi şekillendirin. <br> Her biri alanında uzman olan mentorlarımız, size yol göstererek kariyer yolculuğunuzu kolaylaştırabilir.</p>
+        
+        <!-- Sağ ve Sol Ok Butonları -->
+        <button class="arrow-button arrow-left" onclick="slideMentors(-1)">&#8249;</button>
+        <button class="arrow-button arrow-right" onclick="slideMentors(1)">&#8250;</button>
+        
+       <!-- Mentor Listesi -->
+<div class="mentor-list-wrapper">
+    <div class="mentor-list">
+        <div class="mentor-card">
+            <img src="fotograf/mentor0.png" alt="Mentor 0" class="mentor-photo">
+            <h3 class="mentor-name">Engin Meriç</h3>
+            <p class="mentor-field">Akademisyen ve Muhasebe Uzmanı</p>
+            <p class="mentor-bio">Trakya Üniversitesi'nde muhasebe dersleri veriyorum. Kariyer hedeflerinizi belirlemenize ve muhasebe bilginizi artırmanıza destek olabilirim.</p>
+            <!-- Derecelendirme Yıldız Sistemi -->
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="mentor-card">
+            <img src="fotograf/mentor3.png" alt="Mentor 3" class="mentor-photo">
+            <h3 class="mentor-name">Volkan Demiraslan</h3>
+            <p class="mentor-field">Akademisyen ve Dijital Pazarlama Uzmanı</p>
+            <p class="mentor-bio">Dijital pazarlama, yönetim bilişim sistemleri ve siber teknolojilerde uzmanım. Dijital dönüşüm ve metaverse ekonomisi gibi yenilikçi alanlarda rehberlik edebilirim.</p>
+            <!-- Derecelendirme Yıldız Sistemi -->
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="mentor-card">
+            <img src="fotograf/mentor6.jpg" alt="Mentor 3" class="mentor-photo">
+            <h3 class="mentor-name">Erdem Demiröz</h3>
+            <p class="mentor-field">Akademisyen ve Eğitim Teknolojileri Uzmanı</p>
+            <p class="mentor-bio">Trakya Üniversitesi'nde Yönetim Bilişim Sistemleri dersleri veriyorum. Eğitim teknolojileri ve yenilikçi öğrenme yöntemleri konusunda uzmanım.</p>
+            <!-- Derecelendirme Yıldız Sistemi -->
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="mentor-card">
+            <img src="fotograf/mentor1.jpg" alt="Mentor 1" class="mentor-photo">
+            <h3 class="mentor-name">Sevgi Garip</h3>
+            <p class="mentor-field">Eğlence Sektörü</p>
+            <p class="mentor-bio">10 yılı aşkın süredir eğlence sektöründeyim, özellikle turizm kısmında uzamanım.</p>
+            <!-- Derecelendirme Yıldız Sistemi -->
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="mentor-card">
+            <img src="fotograf/mentor2.jpg" alt="Mentor 2" class="mentor-photo">
+            <h3 class="mentor-name">Selin Acar</h3>
+            <p class="mentor-field">Proje Yöneticisi</p>
+            <p class="mentor-bio">Proje yönetiminde deneyimli Selin, ekibinizin hedeflerini organize etmenize ve başarıya ulaşmanıza yardımcı olabilir.</p>
+            <!-- Derecelendirme Yıldız Sistemi -->
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        
+        <div class="mentor-card">
+            <img src="fotograf/mentor4.jpg" alt="Mentor 4" class="mentor-photo">
+            <h3 class="mentor-name">Ayşe Yılmaz</h3>
+            <p class="mentor-field">İnsan Kaynakları Uzmanı</p>
+            <p class="mentor-bio">Ayşe, 15 yıllık İK deneyimi ile çalışanların motivasyonunu artırma ve işe alım süreçlerini yönetme konularında size yardımcı olabilir.</p>
+            <!-- Derecelendirme Yıldız Sistemi -->
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="mentor-card">
+            <img src="fotograf/mentor5.jpg" alt="Mentor 6" class="mentor-photo">
+            <h3 class="mentor-name">Deniz Şahin</h3>
+            <p class="mentor-field">Yazılım Geliştirici</p>
+            <p class="mentor-bio">Deniz, yazılım geliştirme konusunda geniş bir bilgiye sahip olup, kodlama ve problem çözme becerilerinizi geliştirmenize destek olabilir.</p>
+            <!-- Derecelendirme Yıldız Sistemi -->
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  let currentIndex = 0;
+  const mentorList = document.querySelector('.mentor-list');
+  const mentorCards = document.querySelectorAll('.mentor-card');
+  const mentorsToShow = 3;
+  const totalMentors = mentorCards.length;
+
+  function slideMentors(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+      currentIndex = 0;
+    } else if (currentIndex > totalMentors - mentorsToShow) {
+      currentIndex = totalMentors - mentorsToShow;
+    }
+    const offset = -currentIndex * (mentorCards[0].offsetWidth + 20); // 20 is the gap
+    mentorList.style.transform = `translateX(${offset}px)`;
+  }
+</script>
+    <script src="js/mentorlar.js"></script>
+</body>
+</html>

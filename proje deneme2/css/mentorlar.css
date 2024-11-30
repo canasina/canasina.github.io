@@ -1,0 +1,333 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #333;
+}
+
+/* Menü */
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.menu-item img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.menu-item:hover {
+  color: #000;
+  font-size: 15px;
+}
+
+.menu-item img:hover {
+  transform: scale(1.15);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .btn-primary {
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px 22px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.auth-buttons .btn-primary:hover {
+  transform: scale(1.06);
+}
+
+.auth-buttons .btn-secondary {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.auth-buttons .btn-secondary:hover {
+  transform: scale(1.06);
+}
+
+/* Logo Hover */
+.logo-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Mentor Kartları Konteyner */
+.mentor-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 60px;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.mentor-list-wrapper {
+  overflow: hidden;
+  width: 85%;
+  position: relative;
+  padding: 20px 18px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.mentor-list {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 14px;
+  transform: translateX(0);
+}
+
+.mentor-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 230px;
+  height: 430px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  flex: 0 0 33%; /* Sadece 3 mentor gözükecek şekilde ayarlandı */
+}
+
+/* Kart Hover Efekti */
+.mentor-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: visible; /* Değişiklik: kart büyümesinde konteyner tarafından engellenmemesi için */
+}
+
+/* Mentor Fotoğrafı */
+.mentor-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Mentor İsimleri */
+.mentor-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Alan */
+.mentor-field {
+  font-size: 18px;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Biyografi */
+.mentor-bio {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  background-color: #0097b2;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+.arrow-button:hover {
+  transform: translateY(-50%) scale(1.10);
+}
+
+.arrow-left {
+  left: 80px;
+}
+
+.arrow-right {
+  right: 60px;
+}
+
+/* Derecelendirme Yıldız Sistemi */
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.star {
+  font-size: 24px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover efektini kontrol eder */
+.star.hover {
+  color: #ffc107;
+}
+
+/* Seçilmiş yıldızları kontrol eder */
+.star.selected {
+  color: #ffc107;
+}
+
+/* Tüm Yıldızları Hizala */
+.rating {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Mentor Kategorileri */
+.mentor-categories {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.category-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.category-item {
+  background-color: #4285F4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  background-color: #357ae8;
+}
+/* Mentor Başlığı ve Açıklaması */
+.mentor-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.mentor-description {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}

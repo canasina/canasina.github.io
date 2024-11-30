@@ -1,0 +1,245 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;    /* Dikeyde ortalama */
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+.header {
+    width: 100%;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    width: 50px;
+    height: 50px; /* Sabit bir boyut */
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #333;
+}
+.logo-container:hover {
+    transform: scale(1.02); /* Hem logo hem yazıyı büyüt */
+    transition: transform 0.3s ease; /* Yumuşak geçiş */
+    
+  }
+/* Form Konteyner */
+.form-container {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px 20px;
+    width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+}
+
+/* Başlık */
+.main-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4285F4;
+    outline: none;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="password"] {
+    flex: 1;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+    color: #0073e6;
+    cursor: pointer;
+}
+
+/* Beni Hatırla */
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Buton */
+.cta-section {
+    text-align: center; /* İçindeki tüm metinleri sola hizala */
+    margin: 20px 30px; /* Sağdan ve soldan boşluğu sıfırla */
+    max-width: 70%; /* İsteğe bağlı olarak genişlik ayarı */
+    position: absolute; /* Pozisyonlama */
+    top: 50%; /* Dikey ortalama */
+    transform: translateY(-50%); /* Dikey ortalama */
+  }
+  .cta-title {
+    font-size: 60px; /* Net bir piksel değeri kullanarak boyutu artır */
+    font-weight: bold; /* Kalın yazı */
+    color: #3f3f3f; /* Yazı rengi */
+    margin-bottom: 60px; /* Alt boşluk */
+    margin-top: 20px;
+  }
+  
+  
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-google, .btn-email {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn-google {
+    background-color: #4285F4;
+    color: white;
+    gap: 10px;
+  }
+  
+  .btn-google:hover, .btn-email:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-email {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+}
+
+.divider span {
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 50%;
+    z-index: -1;
+}
+
+/* Alt Metin */
+.login-link {
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #0073b1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
